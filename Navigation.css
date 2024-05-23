@@ -1,0 +1,92 @@
+/* Add some basic styling to the navigation bar */
+.navbar {
+    background-color: #333; 
+    padding: 20px;
+    text-align: center; 
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 24px; 
+    display: flex; /* make the navigation bar a flex container */
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  /*
+  /* Style the logo */
+  .logo {
+    flex: 1; /* make the logo take up the remaining space */
+    animation: move 5s infinite;
+  }
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+  
+  .logo img {
+    width: 60px; 
+    height: 60px; 
+  }
+  
+  /* Style the navigation links */
+  .navbar ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+  }
+  
+  .navbar li {
+    margin-right: 40px; /* increase the space between links */
+  }
+
+  .navbar a {
+    color: white; /* white text color */
+    text-decoration: none; 
+    margin: 0 30px; /* increase the space between links */
+    transition: color 0.5s ease; 
+  }
+  .navbar a:hover {
+    color: coral; 
+  }
+  
+  /* Style the search bar */
+  .search-bar {
+    flex: 1; /* make the search bar take up the remaining space */
+    display: flex; /* make the search bar a flex container */
+    justify-content: flex-end; /* align the search bar to the right */
+    align-items: center; /* center the items vertically */
+  }
+  
+  .search-bar input[type="text"] {
+    width: 200px; /* set the input width */
+    padding: 10px; /* add some padding */
+    margin-right: 10px; /* add some space between the input and the button */
+    border: none; /* remove the border */
+    border-radius: 100px; /* add a border radius */
+    font-size: 16px; /* set the font size */
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .search-bar button[type="submit"] {
+    background-color: #333; /* set the button background color */
+    color: #fff; /* set the button text color */
+    padding: 10px 20px; /* add some padding */
+    border: none; /* remove the border */
+    border-radius: 5px; /* add a border radius */
+    font-size: 16px; /* set the font size */
+    cursor:pointer; /* add a cursor pointer */
+  }
+  
+  .search-bar button[type="submit"]:hover {
+    background-color: coral; /* set the button background color on hover */
+  }
+
+  

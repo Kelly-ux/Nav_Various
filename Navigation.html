@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav|Bar</title>
+    <link rel="icon" type="image/png" href="./ImageStudio/favicon-16x16.png">
+    <link rel="stylesheet" href="Navigation.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+            <img src="/ImageStudio/Mummy.png">
+          </div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Booktable</a></li>
+          </ul>
+          <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+          </div>
+        </nav>
+      </header>
+    <script>
+        // Add a click event listener to the search bar button
+document.querySelector('.search-bar button[type="submit"]').addEventListener('click', function() {
+    // Get the value of the search input
+    var searchInput = document.querySelector('.search-bar input[type="text"]').value;
+  
+    // Log the search input value to the console
+    console.log('Search input value: ' + searchInput);
+  });
+    </script>
+</body>
+</html>
